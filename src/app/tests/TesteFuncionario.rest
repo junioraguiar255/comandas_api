@@ -12,11 +12,13 @@ POST http://127.0.0.1:8000/funcionario/
 Content-Type: application/json
 
 {
-  "id_funcionario": 1,
-  "nome": "Gabriel Ramos Xavier de Souza",
-  "cpf": "987.654.321-00",
-  "cargo": "Atendente",
-  "salario": 2500.00
+  "id_funcionario": 2,
+  "nome": "Gabriel Ramos Xavier",
+  "cpf": "987.654.361-00",
+  "matricula": "Atendente 1",
+  "telefone": "85 896885524",
+  "grupo": 2,
+  "senha": "123123"
 }
 
 ### Teste: Atualizar um funcionário existente
@@ -25,10 +27,12 @@ Content-Type: application/json
 
 {
   "id_funcionario": 1,
-  "nome": "Maria de Oliveira",
+  "nome": "Gabriel Ramos Xavier de Souza",
   "cpf": "987.654.321-00",
-  "cargo": "Gerente",
-  "salario": 3500.00
+  "matricula": "Atendente",
+  "telefone": "85 896885526",
+  "grupo": 2,
+  "senha": "123123"
 }
 
 ### Teste: Deletar um funcionário pelo ID
