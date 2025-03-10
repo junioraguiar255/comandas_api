@@ -1,3 +1,4 @@
+# Gabriel Ramos Xavier de Souza
 from pydantic import BaseModel
 from typing import Optional
 
