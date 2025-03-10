@@ -1,0 +1,35 @@
+### Teste: Buscar todos os produtos
+GET http://127.0.0.1:8000/produto/
+Accept: application/json
+
+### Teste: Buscar um produto por ID
+GET http://127.0.0.1:8000/produto/1
+Accept: application/json
+
+### Teste: Criar um novo produto
+POST http://127.0.0.1:8000/produto/
+Content-Type: application/json
+
+{
+  "id_produto": 1,
+  "nome": "Pastel de Queijo",
+  "descricao": "Delicioso pastel recheado com queijo",
+  "foto": "base64-imagem-aqui",
+  "valor_unitario": 6.50
+}
+
+### Teste: Atualizar um produto existente
+PUT http://127.0.0.1:8000/produto/1
+Content-Type: application/json
+
+{
+  "id_produto": 1,
+  "nome": "Pastel de Carne",
+  "descricao": "Pastel recheado com carne moída temperada",
+  "foto": "base64-imagem-atualizada-aqui",
+  "valor_unitario": 7.00
+}
+
+### Teste: Deletar um produto pelo ID
+DELETE http://127.0.0.1:8000/produto/1
+Accept: application/json
