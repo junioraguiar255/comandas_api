@@ -13,7 +13,7 @@ Content-Type: application/json
 
 {
   "id_funcionario": 1,
-  "nome": "Maria Oliveira",
+  "nome": "Gabriel Ramos Xavier de Souza",
   "cpf": "987.654.321-00",
   "cargo": "Atendente",
   "salario": 2500.00
