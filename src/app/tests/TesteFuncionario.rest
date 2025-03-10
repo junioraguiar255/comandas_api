@@ -1,10 +1,36 @@
 # Gabriel Ramos Xavier de Souza
-### Verbo GET – listar todos
-GET http://localhost:8000/funcionario/ HTTP/1.1
- ### Verbo GET – listar um
-GET http://localhost:8000/funcionario/10 HTTP/1.1
- ### Verbo POST – adicionar
-POST http://127.0.0.1:8000/funcionario/ HTTP/1.1
- ### Verbo PUT – atualiza 
-PUT http://127.0.0.1:8000/funcionario/2 HTTP/1.1
- ### Verbo DELETE - excluir
+### Teste: Buscar todos os funcionários
+GET http://127.0.0.1:8000/funcionario/
+Accept: application/json
+
+### Teste: Buscar um funcionário por ID
+GET http://127.0.0.1:8000/funcionario/1
+Accept: application/json
+
+### Teste: Criar um novo funcionário
+POST http://127.0.0.1:8000/funcionario/
+Content-Type: application/json
+
+{
+  "id_funcionario": 1,
+  "nome": "Maria Oliveira",
+  "cpf": "987.654.321-00",
+  "cargo": "Atendente",
+  "salario": 2500.00
+}
+
+### Teste: Atualizar um funcionário existente
+PUT http://127.0.0.1:8000/funcionario/1
+Content-Type: application/json
+
+{
+  "id_funcionario": 1,
+  "nome": "Maria de Oliveira",
+  "cpf": "987.654.321-00",
+  "cargo": "Gerente",
+  "salario": 3500.00
+}
+
+### Teste: Deletar um funcionário pelo ID
+DELETE http://127.0.0.1:8000/funcionario/1
+Accept: application/json
